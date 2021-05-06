@@ -10,7 +10,7 @@ by adding `exlivery` to your list of dependencies in `mix.exs`:
 ```elixir
 def deps do
   [
-    {:exlivery, "~> 0.1.0"}
+    {:exlivery, "~> 1.0.0"}
   ]
 end
 ```
