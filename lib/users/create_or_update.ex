@@ -3,8 +3,8 @@ defmodule Exlivery.Users.CreateOrUpdate do
   alias Exlivery.Users.User
 
   def call(%{name: name, address: address, email: email, cpf: cpf, age: age}) do
-    address
-    |> User.build(name, email, cpf, age)
+    name
+    |> User.build(email, cpf, age, address)
     |> save_user()
   end
 
