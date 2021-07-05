@@ -1,9 +1,9 @@
 defmodule Exlivery.Users.UserTest do
   use ExUnit.Case
 
-  alias Exlivery.Users.User
-
   import Exlivery.Factory
+
+  alias Exlivery.Users.User
 
   describe "build/5" do
     test "should be able to return a user" do
@@ -16,8 +16,7 @@ defmodule Exlivery.Users.UserTest do
           "Rua Sao Jose, 61"
         )
 
-      expected_response =
-        {:ok, build(:user)}
+      expected_response = {:ok, build(:user)}
 
       assert response == expected_response
     end

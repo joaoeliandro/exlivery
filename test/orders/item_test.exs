@@ -1,9 +1,9 @@
 defmodule Exlivery.Orders.ItemTest do
   use ExUnit.Case
 
-  alias Exlivery.Orders.Item
-
   import Exlivery.Factory
+
+  alias Exlivery.Orders.Item
 
   describe "build/4" do
     test "should be able to return an item" do

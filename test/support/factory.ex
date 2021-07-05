@@ -2,7 +2,7 @@ defmodule Exlivery.Factory do
   use ExMachina
 
   alias Exlivery.Users.User
-  alias Exlivery.Orders.{Order, Item}
+  alias Exlivery.Orders.{Item, Order}
 
   def user_factory do
     %User{
