@@ -6,9 +6,13 @@ defmodule Exlivery.Orders.OrderTest do
   alias Exlivery.Orders.Order
 
   describe "build/2" do
-    test "should be able to return an order" do
+    setup do
       user = build(:user)
 
+      {:ok, user: user}
+    end
+
+    test "should be able to return an order", %{user: user} do
       items = [
         build(:item),
         build(:item,
@@ -26,9 +30,7 @@ defmodule Exlivery.Orders.OrderTest do
       assert response == expected_response
     end
 
-    test "should not be able to return an order without items in the order" do
-      user = build(:user)
-
+    test "should not be able to return an order without items in the order", %{user: user} do
       items = []
 
       response = Order.build(user, items)
