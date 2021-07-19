@@ -4,7 +4,6 @@ defmodule Exlivery.Orders.AgentTest do
   import Exlivery.Factory
 
   alias Exlivery.Orders.Agent, as: OrderAgent
-  alias Exlivery.Orders.Order
 
   describe "save/1" do
     test "should be able to save a order" do

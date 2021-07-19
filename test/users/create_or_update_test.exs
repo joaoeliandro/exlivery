@@ -1,8 +1,6 @@
 defmodule Exlivery.Users.CreateOrUpdateTest do
   use ExUnit.Case
 
-  import Exlivery.Factory
-
   alias Exlivery.Users.Agent, as: UserAgent
   alias Exlivery.Users.CreateOrUpdate
 
