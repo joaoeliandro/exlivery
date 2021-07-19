@@ -35,7 +35,7 @@ defmodule Exlivery.Orders.CreateOrUpdate do
     if Enum.all?(items, &is_struct/1) do
       {:ok, items}
     else
-      {:error, "Invalid items!"}
+      {:error, "Invalid items"}
     end
   end
 end
